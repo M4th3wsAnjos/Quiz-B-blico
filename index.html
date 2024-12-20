@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="book.ico" type="image/x-icon">
+    <title>Quiz Bíblico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container fade-in">
+        <div id="start-screen">
+            <h1>Quiz Bíblico</h1>
+            <p style="text-align: center; margin-bottom: 30px;">Teste seus conhecimentos bíblicos neste quiz desafiador</p>
+            <button class="btn" onclick="window.startGame()">Iniciar Jornada</button>
+        </div>
+
+        <div id="game-screen" style="display:none;">
+            <div class="score-display">
+                <div>Pontuação: <span id="score">0</span></div>
+                <div>Pergunta: <span id="question-number">1</span>/20</div>
+            </div>
+
+            <div class="hearts" id="hearts"></div>
+            
+            <div class="timer-container">
+                <div id="timer-bar" class="timer-bar"></div>
+            </div>
+
+            <div class="question-container">
+                <div id="question" class="question"></div>
+                <div id="answers"></div>
+            </div>
+
+            <div id="explanation" class="explanation"></div>
+            <button id="next-btn" class="btn" style="display:none;" onclick="window.nextQuestion()">Próxima Pergunta</button>
+        </div>
+
+        <div id="end-screen" style="display:none;">
+            <h1>Jornada Concluída!</h1>
+            <div class="final-score">
+                <span id="final-score">0</span> pontos
+            </div>
+            <div id="achievement" class="achievement"></div>
+            <button class="btn" onclick="window.startGame()">Nova Jornada</button>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
