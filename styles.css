@@ -212,3 +212,114 @@ h1 {
     font-weight: 600;
     color: #92400E;
 }
+
+/* Ajustes para tablets */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.9em;
+    }
+
+    .question {
+        font-size: 1.1em;
+    }
+}
+
+/* Ajustes para smartphones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.85em;
+    }
+
+    .question {
+        font-size: 1em;
+    }
+
+    .answer-btn {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .score-display {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .hearts {
+        gap: 5px;
+    }
+
+    .heart {
+        font-size: 24px;
+    }
+
+    .explanation {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    .final-score {
+        font-size: 1.8em;
+    }
+
+    .achievement {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 320px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+}
+
+/* Ajuste para altura da tela */
+@media (max-height: 700px) {
+    .container {
+        margin: 10px 0;
+    }
+
+    .question-container {
+        margin: 10px 0;
+    }
+
+    .hearts {
+        margin: 10px 0;
+    }
+}
