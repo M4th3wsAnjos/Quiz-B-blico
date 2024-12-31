@@ -1,202 +1,202 @@
 const questions = [
     {
-        question: "Quem construiu a arca?",
-        answers: [
-            { text: "Abraão", correct: false },
-            { text: "Noé", correct: true },
-            { text: "Moisés", correct: false },
-            { text: "Davi", correct: false }
-        ],
-        explanation: "Foi Noé quem construiu a arca seguindo as instruções específicas de Deus. Esta história está em Gênesis 6-9."
-    },
-    {
-        question: "Qual foi o primeiro milagre de Jesus?",
-        answers: [
-            { text: "Multiplicação dos pães", correct: false },
-            { text: "Cura de um cego", correct: false },
-            { text: "Transformar água em vinho", correct: true },
-            { text: "Ressurreição de Lázaro", correct: false }
-        ],
-        explanation: "Jesus transformou água em vinho em um casamento em Caná da Galileia. Este milagre está registrado em João 2:1-11."
-    },
-    {
-        question: "Quem foi jogado na cova dos leões?",
-        answers: [
-            { text: "Daniel", correct: true },
-            { text: "Paulo", correct: false },
-            { text: "Pedro", correct: false },
-            { text: "José", correct: false }
-        ],
-        explanation: "Daniel foi lançado na cova dos leões por continuar orando a Deus, mesmo após a proibição do rei. A história está em Daniel 6."
-    },
-    {
-        question: "Quem negou Jesus três vezes?",
+        question: "Qual discípulo andou sobre as águas com Jesus?",
         answers: [
             { text: "João", correct: false },
             { text: "Tiago", correct: false },
             { text: "Pedro", correct: true },
             { text: "André", correct: false }
         ],
-        explanation: "Pedro negou conhecer Jesus três vezes antes do galo cantar, conforme Jesus havia predito. Este evento está registrado em todos os quatro evangelhos."
+        explanation: "Pedro foi o único discípulo que andou sobre as águas com Jesus, embora tenha começado a afundar quando duvidou (Mateus 14:29)."
     },
     {
-        question: "Qual profeta foi arrebatado ao céu em um carro de fogo?",
+        question: "Qual era a profissão de José, pai adotivo de Jesus?",
         answers: [
-            { text: "Elias", correct: true },
+            { text: "Pescador", correct: false },
+            { text: "Carpinteiro", correct: true },
+            { text: "Pastor", correct: false },
+            { text: "Comerciante", correct: false }
+        ],
+        explanation: "José era carpinteiro, profissão que também ensinou a Jesus (Mateus 13:55)."
+    },
+    {
+        question: "Quantos filhos tinha Jó antes da provação?",
+        answers: [
+            { text: "Sete filhos e três filhas", correct: true },
+            { text: "Três filhos e sete filhas", correct: false },
+            { text: "Cinco filhos e cinco filhas", correct: false },
+            { text: "Dez filhos", correct: false }
+        ],
+        explanation: "Jó tinha sete filhos e três filhas antes das provações (Jó 1:2)."
+    },
+    {
+        question: "Qual profeta foi engolido por um grande peixe?",
+        answers: [
+            { text: "Jonas", correct: true },
+            { text: "Elias", correct: false },
             { text: "Eliseu", correct: false },
-            { text: "Isaías", correct: false },
             { text: "Jeremias", correct: false }
         ],
-        explanation: "Elias foi arrebatado ao céu em um redemoinho, em um carro de fogo puxado por cavalos de fogo, conforme registrado em 2 Reis 2:11."
+        explanation: "Jonas foi engolido por um grande peixe quando tentava fugir do chamado de Deus para pregar em Nínive (Jonas 1:17)."
     },
     {
-        question: "Em qual cidade Jesus nasceu?",
+        question: "Quem foi chamado 'amigo de Deus' nas escrituras?",
         answers: [
-            { text: "Jerusalém", correct: false },
-            { text: "Nazaré", correct: false },
-            { text: "Belém", correct: true },
-            { text: "Cafarnaum", correct: false }
-        ],
-        explanation: "Jesus nasceu em Belém da Judeia, cumprindo a profecia do Antigo Testamento em Miqueias 5:2."
-    },
-    {
-        question: "Quem foi o pai de Salomão?",
-        answers: [
-            { text: "Saul", correct: false },
-            { text: "Davi", correct: true },
-            { text: "Josias", correct: false },
-            { text: "Samuel", correct: false }
-        ],
-        explanation: "Salomão era filho do Rei Davi com Bate-Seba e se tornou o terceiro rei de Israel, sucessor de seu pai."
-    },
-    {
-        question: "Qual foi a primeira mulher criada por Deus?",
-        answers: [
-            { text: "Maria", correct: false },
-            { text: "Sara", correct: false },
-            { text: "Eva", correct: true },
-            { text: "Rute", correct: false }
-        ],
-        explanation: "Eva foi a primeira mulher, criada por Deus a partir da costela de Adão, conforme descrito em Gênesis 2:21-22."
-    },
-    {
-        question: "Quais eram os nomes dos primeiros filhos de Adão e Eva?",
-        answers: [
-            { text: "Caim e Abel", correct: true },
-            { text: "Jacó e Esaú", correct: false },
-            { text: "Ismael e Isaque", correct: false },
-            { text: "Sem e Cam", correct: false }
-        ],
-        explanation: "Caim e Abel foram os primeiros filhos de Adão e Eva. Caim era agricultor e Abel pastor de ovelhas, conforme Gênesis 4."
-    },
-    {
-        question: "Quantos anos durou a construção da Arca de Noé?",
-        answers: [
-            { text: "40 anos", correct: false },
-            { text: "100 anos", correct: true },
-            { text: "20 anos", correct: false },
-            { text: "70 anos", correct: false }
-        ],
-        explanation: "De acordo com Gênesis 5:32 e 7:6, Noé levou aproximadamente 100 anos para construir a arca, seguindo as instruções específicas de Deus."
-    },
-    {
-        question: "Qual era o nome da mulher de Abraão?",
-        answers: [
-            { text: "Sara", correct: true },
-            { text: "Raquel", correct: false },
-            { text: "Rebeca", correct: false },
-            { text: "Lia", correct: false }
-        ],
-        explanation: "Sara era a esposa de Abraão. Seu nome original era Sarai, mas Deus mudou para Sara (Gênesis 17:15)."
-    },
-    {
-        question: "Quantos dias e noites Jesus jejuou no deserto?",
-        answers: [
-            { text: "20 dias", correct: false },
-            { text: "30 dias", correct: false },
-            { text: "40 dias", correct: true },
-            { text: "50 dias", correct: false }
-        ],
-        explanation: "Jesus jejuou por 40 dias e 40 noites no deserto, onde foi tentado por Satanás (Mateus 4:1-2)."
-    },
-    {
-        question: "Qual instrumento musical Davi tocava?",
-        answers: [
-            { text: "Harpa", correct: true },
-            { text: "Flauta", correct: false },
-            { text: "Tambor", correct: false },
-            { text: "Trombeta", correct: false }
-        ],
-        explanation: "Davi tocava harpa para acalmar o rei Saul quando este era atormentado (1 Samuel 16:23)."
-    },
-    {
-        question: "Quem era o mais forte dos juízes de Israel?",
-        answers: [
-            { text: "Gideão", correct: false },
-            { text: "Sansão", correct: true },
-            { text: "Débora", correct: false },
-            { text: "Jefté", correct: false }
-        ],
-        explanation: "Sansão era conhecido por sua força sobrenatural, que vinha de seu cabelo nunca cortado (Juízes 13-16)."
-    },
-    {
-        question: "Qual apóstolo era cobrador de impostos antes de seguir Jesus?",
-        answers: [
-            { text: "Pedro", correct: false },
-            { text: "João", correct: false },
-            { text: "Mateus", correct: true },
-            { text: "Filipe", correct: false }
-        ],
-        explanation: "Mateus (também chamado Levi) era cobrador de impostos antes de ser chamado por Jesus (Mateus 9:9)."
-    },
-    {
-        question: "Qual era o nome do jardim onde Adão e Eva viviam?",
-        answers: [
-            { text: "Jardim do Éden", correct: true },
-            { text: "Jardim da Vida", correct: false },
-            { text: "Jardim Celestial", correct: false },
-            { text: "Jardim Sagrado", correct: false }
-        ],
-        explanation: "O Jardim do Éden era o paraíso onde Adão e Eva viviam antes da queda (Gênesis 2:8)."
-    },
-    {
-        question: "Quem foi o primeiro rei de Israel?",
-        answers: [
+            { text: "Moisés", correct: false },
             { text: "Davi", correct: false },
-            { text: "Samuel", correct: false },
-            { text: "Saul", correct: true },
+            { text: "Abraão", correct: true },
             { text: "Salomão", correct: false }
         ],
-        explanation: "Saul foi o primeiro rei de Israel, ungido pelo profeta Samuel (1 Samuel 10:1)."
+        explanation: "Abraão foi chamado amigo de Deus por sua grande fé e obediência (Tiago 2:23)."
     },
     {
-        question: "Qual dos evangelhos foi escrito por um médico?",
+        question: "Qual foi o sinal da aliança de Deus com Noé?",
         answers: [
-            { text: "Mateus", correct: false },
+            { text: "Uma estrela", correct: false },
+            { text: "O arco-íris", correct: true },
+            { text: "Uma pomba", correct: false },
+            { text: "Uma nuvem", correct: false }
+        ],
+        explanation: "O arco-íris foi estabelecido como sinal da aliança de Deus com Noé, prometendo nunca mais destruir a terra por dilúvio (Gênesis 9:13)."
+    },
+    {
+        question: "Qual personagem bíblico teve sua força nos cabelos?",
+        answers: [
+            { text: "Davi", correct: false },
+            { text: "Sansão", correct: true },
+            { text: "Samuel", correct: false },
+            { text: "Saul", correct: false }
+        ],
+        explanation: "Sansão tinha sua força sobrenatural em seus cabelos como parte de seu voto de nazireu (Juízes 16:17)."
+    },
+    {
+        question: "Quantos anos Jesus viveu na terra?",
+        answers: [
+            { text: "30 anos", correct: false },
+            { text: "33 anos", correct: true },
+            { text: "35 anos", correct: false },
+            { text: "40 anos", correct: false }
+        ],
+        explanation: "Jesus viveu aproximadamente 33 anos, iniciando seu ministério aos 30 e servindo por cerca de 3 anos."
+    },
+    {
+        question: "Quem sucedeu Moisés na liderança de Israel?",
+        answers: [
+            { text: "Calebe", correct: false },
+            { text: "Josué", correct: true },
+            { text: "Arão", correct: false },
+            { text: "Samuel", correct: false }
+        ],
+        explanation: "Josué foi escolhido por Deus para suceder Moisés e liderar o povo de Israel à Terra Prometida (Josué 1:1-2)."
+    },
+    {
+        question: "Qual foi a primeira mulher juíza de Israel?",
+        answers: [
+            { text: "Rute", correct: false },
+            { text: "Ester", correct: false },
+            { text: "Débora", correct: true },
+            { text: "Noemi", correct: false }
+        ],
+        explanation: "Débora foi uma profetisa e a única mulher juíza de Israel registrada na Bíblia (Juízes 4:4)."
+    },
+    {
+        question: "Em qual monte Moisés recebeu os Dez Mandamentos?",
+        answers: [
+            { text: "Monte Sinai", correct: true },
+            { text: "Monte Carmelo", correct: false },
+            { text: "Monte das Oliveiras", correct: false },
+            { text: "Monte Hebron", correct: false }
+        ],
+        explanation: "Moisés recebeu os Dez Mandamentos no Monte Sinai (Êxodo 19-20)."
+    },
+    {
+        question: "Qual apóstolo era médico?",
+        answers: [
             { text: "Marcos", correct: false },
             { text: "Lucas", correct: true },
-            { text: "João", correct: false }
+            { text: "João", correct: false },
+            { text: "Mateus", correct: false }
         ],
-        explanation: "Lucas, que era médico, escreveu o terceiro evangelho e também o livro de Atos (Colossenses 4:14)."
+        explanation: "Lucas, o autor do terceiro evangelho e do livro de Atos, era médico (Colossenses 4:14)."
     },
     {
-        question: "Quantos dias Jesus permaneceu na terra após sua ressurreição?",
+        question: "Qual era o nome do filho de Abraão com Sara?",
         answers: [
-            { text: "30 dias", correct: false },
-            { text: "40 dias", correct: true },
-            { text: "50 dias", correct: false },
-            { text: "60 dias", correct: false }
+            { text: "Ismael", correct: false },
+            { text: "Isaque", correct: true },
+            { text: "Israel", correct: false },
+            { text: "Esaú", correct: false }
         ],
-        explanation: "Jesus permaneceu na terra por 40 dias após sua ressurreição, antes de sua ascensão (Atos 1:3)."
+        explanation: "Isaque foi o filho da promessa, nascido de Abraão e Sara em sua velhice (Gênesis 21:3)."
     },
     {
-        question: "Qual era o nome do sogro de Moisés?",
+        question: "Qual cidade Jesus escolheu para seu primeiro milagre público?",
         answers: [
-            { text: "Balaão", correct: false },
-            { text: "Jetro", correct: true },
-            { text: "Labão", correct: false },
-            { text: "Anás", correct: false }
+            { text: "Belém", correct: false },
+            { text: "Jerusalém", correct: false },
+            { text: "Caná", correct: true },
+            { text: "Nazaré", correct: false }
         ],
-        explanation: "Jetro era o sogro de Moisés e sacerdote de Midiã (Êxodo 3:1)."
+        explanation: "Jesus realizou seu primeiro milagre público em Caná da Galileia, transformando água em vinho (João 2:11)."
+    },
+    {
+        question: "Quem foi o primeiro mártir cristão?",
+        answers: [
+            { text: "Paulo", correct: false },
+            { text: "Pedro", correct: false },
+            { text: "Estêvão", correct: true },
+            { text: "Tiago", correct: false }
+        ],
+        explanation: "Estêvão foi o primeiro mártir cristão, apedrejado por seu testemunho de fé (Atos 7:54-60)."
+    },
+    {
+        question: "Qual era o nome original de Paulo antes de sua conversão?",
+        answers: [
+            { text: "Silas", correct: false },
+            { text: "Saulo", correct: true },
+            { text: "Simão", correct: false },
+            { text: "Samuel", correct: false }
+        ],
+        explanation: "O nome original de Paulo era Saulo, que foi mudado após sua conversão no caminho para Damasco (Atos 13:9)."
+    },
+    {
+        question: "Quantos anos durou a construção do Templo de Salomão?",
+        answers: [
+            { text: "3 anos", correct: false },
+            { text: "5 anos", correct: false },
+            { text: "7 anos", correct: true },
+            { text: "10 anos", correct: false }
+        ],
+        explanation: "O Templo de Salomão levou 7 anos para ser construído (1 Reis 6:38)."
+    },
+    {
+        question: "Quem foi levado ao céu em uma carruagem de fogo?",
+        answers: [
+            { text: "Elias", correct: true },
+            { text: "Enoque", correct: false },
+            { text: "Eliseu", correct: false },
+            { text: "Moisés", correct: false }
+        ],
+        explanation: "Elias foi arrebatado ao céu em uma carruagem de fogo (2 Reis 2:11)."
+    },
+    {
+        question: "Quantos livros tem a Bíblia no total?",
+        answers: [
+            { text: "66 livros", correct: true },
+            { text: "73 livros", correct: false },
+            { text: "65 livros", correct: false },
+            { text: "70 livros", correct: false }
+        ],
+        explanation: "A Bíblia Protestante contém 66 livros no total: 39 no Antigo Testamento e 27 no Novo Testamento."
+    },
+    {
+        question: "Qual foi a última palavra de Jesus na cruz?",
+        answers: [
+            { text: "Consumado é", correct: true },
+            { text: "Pai, perdoa-lhes", correct: false },
+            { text: "Tenho sede", correct: false },
+            { text: "Deus meu, Deus meu", correct: false }
+        ],
+        explanation: "A última palavra de Jesus na cruz foi 'Consumado é' (João 19:30)."
     }
 ];
